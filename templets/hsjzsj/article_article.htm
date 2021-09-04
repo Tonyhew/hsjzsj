@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>河南瀚森建筑设计有限公司-瀚森建筑设计_{dede:field.title/}</title>
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/header.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/footer.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/project_article.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/article_article.css">
+</head>
+
+<body>
+
+  {dede:include filename="header.htm"/}
+
+
+  <div class="project_article_wrapper">
+
+    <div class="project_article_header">
+
+      <div class="projectList_title_left">
+        <p>{dede:field.typename/}</p>
+        <p class="messageBoard_sec_tit">
+          {dede:field name='typeid' runphp='yes'}
+          $id=@me;
+          global $dsql;
+          $sql="select seotitle from hssj_arctype where id=$id";
+          $row=$dsql->getOne($sql);
+          @me=$row["seotitle"];
+          {/dede:field}
+        </p>
+        <p class="messageBoard_line"></p>
+      </div>
+
+    </div>
+
+
+    <div class="project_article_main">
+
+      <div class="project_a_left">
+
+        <div class="article_title">
+
+          <h3>{dede:field.title/}</h3>
+
+          <p class="article_shortTit">
+            {dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}
+          </p>
+
+
+        </div>
+
+        <div class="article_container">
+          {dede:field.body/}
+        </div>
+
+      </div>
+
+      <div class="project_a_right">
+
+        <div class="project_r_tit">
+          <h4>相关新闻</h4>
+          <p class="project_right_eng">related news</p>
+        </div>
+
+        <div class="project_r_info">
+
+          {dede:likearticle mytypeid='2' row='3' titlelen='250'}
+          <a href="[field:arcurl/]">
+            <img src="[field:picname/]" alt="">
+            <p>[field:title/]</p>
+          </a>
+          {/dede:likearticle}
+
+        </div>
+
+      </div>
+
+      <div class="clear"></div>
+
+    </div>
+
+
+  </div>
+
+
+  {dede:include filename="footer.htm"/}
+
+</body>
+
+</html>

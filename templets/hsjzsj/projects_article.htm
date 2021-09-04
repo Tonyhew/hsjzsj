@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>河南瀚森建筑设计有限公司-瀚森建筑设计_{dede:field.title/}</title>
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/header.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/footer.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/project_article.css">
+</head>
+
+<body>
+
+  {dede:include filename="header.htm"/}
+
+
+  <div class="project_article_wrapper">
+
+    <div class="project_article_header">
+
+      <div class="projectList_title_left">
+        <p>{dede:field.typename/}</p>
+        <p class="messageBoard_sec_tit">
+          {dede:field name='typeid' runphp='yes'}
+          $id=@me;
+          global $dsql;
+          $sql="select seotitle from hssj_arctype where id=$id";
+          $row=$dsql->getOne($sql);
+          @me=$row["seotitle"];
+          {/dede:field}
+        </p>
+        <p class="messageBoard_line"></p>
+      </div>
+
+      <div class="projectList_catogary_menu">
+        {dede:channel reid='5' type='son' currentstyle="<b><span>|</span><a href='~typelink~' ~rel~
+            class='onActive'>~typename~</a></b>"}
+        <b>
+          <span>|</span>
+          <a href="[field:typelink/]">
+            <p>[field:typename/]</p>
+          </a>
+        </b>
+        {/dede:channel}
+        <span>|</span>
+      </div>
+
+    </div>
+
+
+    <div class="project_article_main">
+
+      <div class="project_a_left">
+
+        <div class="article_title">
+
+          <h3>{dede:field.title/}</h3>
+
+          <p class="article_shortTit">
+            {dede:field name=array runphp=yes}
+            if(@me['shorttitle']=='') {
+            @me = "";
+            } else {
+              @me = "{@me['shorttitle']}";
+            }
+            {/dede:field}
+          </p>
+
+          <div class="authorShare">
+
+            <p class="author">
+              文/{dede:field.writer/}
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="article_container">
+          {dede:field.body/}
+        </div>
+
+      </div>
+
+      <div class="project_a_right">
+
+        <div class="project_r_tit">
+          <h4>工程信息</h4>
+          <p class="project_right_eng">engineering information</p>
+        </div>
+
+        <div class="project_r_info">
+
+          {dede:field name=array runphp=yes}
+          if(@me['project_type']=='') {
+          @me = "";
+          } else {
+          @me = "<p>项目类型：<span>{@me['project_type']}</span></p>";
+          }
+          {/dede:field}
+
+          {dede:field name=array runphp=yes}
+          if(@me['project_name']=='') {
+          @me = "";
+          } else {
+          @me = "<p>项目名称：<span>{@me['project_name']}</span></p>";
+          }
+          {/dede:field}
+
+          {dede:field name=array runphp=yes}
+          if(@me['ownerunit']=='') {
+          @me = "";
+          } else {
+          @me = "<p>业主单位：<span>{@me['ownerunit']}</span></p>";
+          }
+          {/dede:field}
+
+          {dede:field name=array runphp=yes}
+          if(@me['buildinga']=='') {
+          @me = "";
+          } else {
+          @me = "<p>建筑设计：<span>{@me['buildinga']}</span></p>";
+          }
+          {/dede:field}
+
+          {dede:field name=array runphp=yes}
+          if(@me['partnercorp']=='') {
+          @me = "";
+          } else {
+          @me = "<p>合作单位：<span>{@me['partnercorp']}</span></p>";
+          }
+          {/dede:field}
+
+          {dede:field name=array runphp=yes}
+          if(@me['chiefarchitect']=='') {
+          @me = "";
+          } else {
+          @me = "<p>总建筑师：<span>{@me['chiefarchitect']}</span></p>";
+          }
+          {/dede:field}
+
+          {dede:field name=array runphp=yes}
+          if(@me['designteam']=='') {
+          @me = "";
+          } else {
+          @me = "<p>设计团队：<span>{@me['designteam']}</span></p>";
+          }
+          {/dede:field}
+
+          {dede:field name=array runphp=yes}
+          if(@me['roomdesign']=='') {
+          @me = "";
+          } else {
+          @me = "<p>室内设计：<span>{@me['roomdesign']}</span></p>";
+          }
+          {/dede:field}
+
+          {dede:field name=array runphp=yes}
+          if(@me['floorage']=='') {
+          @me = "";
+          } else {
+          @me = "<p>建筑面积：<span>{@me['floorage']}</span></p>";
+          }
+          {/dede:field}
+
+          {dede:field name=array runphp=yes}
+          if(@me['photograph']=='') {
+          @me = "";
+          } else {
+          @me = "<p>建筑摄影：<span>{@me['photograph']}</span></p>";
+          }
+          {/dede:field}
+
+        </div>
+
+      </div>
+
+      <div class="clear"></div>
+
+    </div>
+
+
+  </div>
+
+
+  {dede:include filename="footer.htm"/}
+
+</body>
+
+</html>

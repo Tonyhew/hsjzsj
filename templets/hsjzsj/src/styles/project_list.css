@@ -1,0 +1,271 @@
+.project_list_container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projectsList_banner {
+  width: 100%;
+  height: 600px;
+}
+
+.projectsList_banner div {
+  width: 100%;
+  height: 100%;
+  background: url(/templets/hsjzsj/src/assets/projects/banner_top.jpg)no-repeat;
+  background-size: contain;
+}
+
+.project_main {
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.projectList_title_left {
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.projectList_title_left p:first-child {
+  font-size: 20px;
+}
+
+.messageBoard_sec_tit {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.messageBoard_line {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 175px;
+  background: #dedede;
+}
+
+.projectList_catogary_menu {
+  float: right;
+  text-align: right;
+  width: 565px;
+  padding-top: 32px;
+}
+
+.projectList_catogary_menu b {
+  font-weight: normal;
+}
+
+.projectList_catogary_menu span {
+  display: inline-block;
+  line-height: 28px;
+  height: 28px;
+  vertical-align: top;
+  vertical-align: middle;
+  color: #bbbbbb;
+  font-size: 12px;
+}
+
+.projectList_catogary_menu a {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 28px;
+  height: 28px;
+  vertical-align: top;
+  text-align: center;
+  color: #717171;
+  width: 76px;
+  position: relative;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.projectList_catogary_menu a:hover {
+  background: #333;
+  color: #fff !important;
+}
+
+.onActive {
+  background: #333;
+  color: #fff !important;
+}
+
+.projectList_catogary_menu a p {
+  display: inline-block;
+}
+
+.project_list_wrapper {
+  width: 100%;
+  margin: 0 0 80px auto;
+}
+
+.project_list_wrapper a {
+  float: left;
+  width: 50%;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.project_list_wrapper a:nth-child(even) {
+  margin-right: 0;
+}
+
+.project_list_wrapper a .project_list_pic {
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+  height: auto!important;
+}
+
+.project_list_wrapper a .project_list_pic .project_pic_bg {
+  position: absolute!important;
+  width: 100%;
+  height: 100%!important;
+  border: 40px solid #fff;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+
+.project_list_wrapper a .project_list_pic img {
+  transform: scale(0.9);
+  transition: transform .9s;
+  position: initial!important;
+}
+
+.project_list_wrapper a .project_list_pic:hover img {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  /*Safari 和 Chrome*/
+  -moz-transform: scale(1);
+  /*Firefox*/
+  -ms-transform: scale(1);
+  /*IE9*/
+  -o-transform: scale(1);
+  /*Opera*/
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.project_list_title {
+  margin-left: 40px;
+  position: absolute;
+  bottom: 12px;
+  z-index: 10;
+  width: 80%;
+  height: 40px;
+}
+
+.project_list_title p:first-child {
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.project_list_title p:nth-child(2) {
+  color: #585858;
+  font-size: 14px;
+  padding-top: 5px;
+  height: 22px;
+  overflow: hidden;
+  zoom: 1;
+  width: 90%;
+  white-space: nowrap;
+}
+
+.project_list_pagination {
+  width: 100%;
+  display: inline-block;
+  height: 40px;
+  margin: 0px auto;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+
+.project_list_pagination li {
+  font-size: 16px;
+  margin: 0 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #585757;
+  border-radius: 0%;
+  transition: all ease-in-out .5s;
+}
+
+.project_list_pagination li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.thisclass {
+  border: none;
+  background: #000;
+  color: #fff!important;
+}
+
+.project_list_pagination li:hover a {
+  border: none;
+  background: #000;
+  color: #fff!important;
+}
+
+.project_list_pagination p {
+  color: #9c9c9c;
+  position: relative;
+  top: -40px;
+  user-select: none;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+  .projectsList_banner {
+    height: 30vh;
+  }
+
+  .projectsList_banner div {
+    background-size: cover;
+  }
+
+  .projectList_catogary_menu {
+    width: 350px;
+    padding-top: 0;
+  }
+
+  .project_list_wrapper {
+    position: relative;
+    top: 65px;
+  }
+
+  .project_list_wrapper a .project_list_pic .project_pic_bg {
+    display: none;
+  }
+
+  .project_list_wrapper a {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

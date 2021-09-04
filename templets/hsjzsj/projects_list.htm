@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>河南瀚森建筑设计有限公司-瀚森建筑设计_{dede:field.seotitle /}{dede:field.title /}</title>
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/header.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/footer.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/project_list.css">
+</head>
+
+<body>
+
+  {dede:include filename="header.htm"/}
+
+
+
+  <div class="project_list_container">
+
+    <div class="projectsList_banner">
+      <div></div>
+    </div>
+
+    <div class="project_main">
+
+      <div class="projectList_title_left">
+        <p>经典案例</p>
+        <p class="messageBoard_sec_tit">case</p>
+        <p class="messageBoard_line"></p>
+      </div>
+
+      <div class="projectList_catogary_menu">
+        {dede:channel reid='5' type='son' currentstyle="<b><span>|</span><a href='~typelink~' ~rel~
+            class='onActive'>~typename~</a></b>"}
+        <b>
+          <span>|</span>
+          <a href="[field:typelink/]">
+            <p>[field:typename/]</p>
+          </a>
+        </b>
+        {/dede:channel}
+        <span>|</span>
+      </div>
+
+      <div class="project_list_wrapper" id="project_list">
+
+        {dede:arclist pagesize ='10' addfields='city, project_name,picshowhow,pictype,list_pic' channelid='18'}
+        <a href="[field:arcurl/]" class="item">
+          <div class="project_list_pic">
+            <div class="project_pic_bg"></div>
+            <img src="[field:list_pic function='GetOneImgUrl(@me,0)'/] " alt="">
+          </div>
+          <div class="project_list_title">
+            <p>[field:title/] / [field:shorttitle/]</p>
+            <p>[field:description/]</p>
+          </div>
+        </a>
+        {/dede:arclist}
+
+        <div class="clear"></div>
+      </div>
+
+      <div class="project_list_pagination">
+
+        {dede:pagelist listitem="pageno"/}
+
+      </div>
+      <div class="clear"></div>
+
+    </div>
+
+  </div>
+
+
+
+  {dede:include filename="footer.htm"/}
+
+
+  <script type="text/javascript" src="/templets/hsjzsj/src/js/project_list.js"></script>
+  <script type="text/javascript" src="/templets/hsjzsj/src/js/waterfall.js"></script>
+  <script>
+
+    $("#project_list div").masonry({
+      
+    });
+
+  </script>
+</body>
+
+</html>

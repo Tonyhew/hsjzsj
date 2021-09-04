@@ -1,0 +1,558 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.about_container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.about_header {
+	width: 100%;
+	height: 60vh;
+}
+
+.about_header .about_header_banner {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(https://www.aisa.com.cn/media/materials/3/origin/ff3bf3b0715bae2eeefd1af4ad4e292d_Pdm1Ali_origin.jpg);
+}
+
+.about_tab_container {
+	width: 100%;
+	padding: 50px 0px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 0px;
+}
+
+.about_tab_main {
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 50px;
+	height: 30px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	color: #666
+}
+
+.about_tab_list {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	border-bottom: 1px solid #ddd;
+}
+
+.about_tab_list li {
+	width: 166px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	display: inline;
+	cursor: pointer;
+	padding: 10px 0;
+}
+
+.about_tab_list li.about_tab_active {
+	color: #217af0;
+	border: 1px solid #ddd;
+	padding: 10px 0;
+	position: inherit;
+	top: -16px;
+	border-bottom: 1px solid transparent;
+	background-color: #fff;
+	margin-bottom: -1px;
+}
+
+.about_tab_article {
+	width: 90%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	display: none;
+	margin: 10px auto;
+	padding-top: 20px;
+}
+
+.about_tab_wrap {
+	margin-top: 30px;
+}
+
+.about_tab_wrap .show {
+	display: block;
+}
+
+.about_tab_one {
+	width: 100%;
+}
+
+.tab_title {
+	text-align: center;
+}
+
+.tab_title:first-child h1 {
+	margin-bottom: 0px;
+	font-size: 24px;
+}
+
+.tab_title .tab_title_en span {
+	text-transform: capitalize;
+	font-size: 13px;
+	color: rgb(153, 153, 153);
+}
+
+.tab_article_main {
+	margin: 30px auto 60px auto;
+	font-size: 14px;
+	line-height: 2em;
+	text-align: justify;
+	width: 80%;
+	color: rgb(51, 51, 51);
+	text-indent: 2em;
+}
+
+.tab_one_logo {
+	width: 160px;
+	min-height: 0px;
+	height: 50px;
+	margin: 0 auto 30px auto;
+}
+
+.tab_one_logo div {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/common/logo.png);
+}
+
+.honor_list_one {
+	width: 100%;
+}
+
+.honor_describe {
+	text-align: center;
+}
+
+.honor_list_one .honor_list_title {
+	font-size: 14px;
+	line-height: 35px;
+	height: 30px;
+	color: #fff;
+	font-weight: bold;
+	min-height: 0px;
+	height: 35px;
+	background-color: rgb(199, 0, 37);
+	padding-left: 15px;
+	border-left: 4px none rgb(161, 0, 30);
+	margin-bottom: 10px;
+}
+
+.honor_list_title_red {
+	color: rgb(199, 0, 37);
+	min-height: 0px;
+	display: -ms-flexbox;
+	padding-left: 15px;
+	margin-right: 5px;
+}
+
+.honor_list_title_red p {
+	display: inline-block;
+	font-weight: bold;
+	color: #c70025 !important;
+	margin-left: -10px;
+	padding-right: 10px;
+}
+
+.honor_list_title_red p:first-child {
+	margin-bottom: 0px;
+	position: relative;
+	bottom: 0px;
+	color: rgb(51, 51, 51);
+	font-size: 13px;
+	line-height: 2em;
+	left: auto;
+}
+
+.honor_list_title_red p:nth-child(2) {
+	margin-bottom: 0px;
+	line-height: 2.5em;
+	font-size: 13px;
+	text-align: left;
+}
+
+.honor_list_grey {
+	min-height: 0px;
+	padding-left: 15px;
+	margin-right: 5px;
+	-webkit-transform: rotate(0deg) scale(1) translate(0%);
+	-ms-transform: rotate(0deg) scale(1) translate(0%);
+	transform: rotate(0deg) scale(1) translate(0%);
+	transition: all 0.3s ease 0s;
+}
+
+.honor_list_grey p {
+	display: inline-block;
+}
+
+.honor_list_grey p:first-child {
+	margin-bottom: 0px;
+	margin-right: 5px;
+	position: relative;
+	bottom: 0px;
+	color: rgb(51, 51, 51);
+	font-size: 15px;
+	line-height: 2em;
+	left: auto;
+}
+
+.honor_list_grey:hover {
+	padding-left: 5px;
+}
+
+.honor_list_grey:hover p {
+	color: #c70025 !important;
+	font-weight: bold;
+	transition: All 0.3s ease;
+}
+
+.timeline_wrapper {
+	background: url(/templets/hsjzsj/src/assets/common/timeline.png) repeat-y center;
+}
+
+.timeline_wrapper {
+	display: block;
+	zoom: 1;
+}
+
+.f24 {
+	font-size: 24px;
+}
+
+.timeline_wrapper li:before {
+	background: url(/templets/hsjzsj/src/assets/common/timeline_dot.png) no-repeat center center;
+	left: -68px;
+	top: 12px;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 17px;
+	height: 17px;
+}
+
+.about_tab_one li h4:hover {
+	color: #F8F8F8;
+	transition: all 1s;
+	transform: translateY(-15px);
+}
+
+.about_tab_one li h4 {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	font-family: "Lato";
+	color: #ecf0f1;
+	text-transform: uppercase;
+	padding: 4px 0;
+	transition: 0.5s;
+}
+
+.timeline_wrapper li h4::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	top: 100%;
+	left: 0;
+	background: #3498db;
+	transition: transform 0.5s;
+	transform: scaleX(0);
+	transform-origin: right;
+}
+
+.timeline_wrapper li h4:hover {
+	color: #95a5a6;
+}
+
+.timeline_wrapper li h4:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.timeline_year {
+	font-size: 30px;
+}
+
+.timeline_desc {
+	font-size: 14px;
+}
+
+.timeline_wrapper li:nth-child(2n):before {
+	background: url(/templets/hsjzsj/src/assets/common/timeline_dot.png) no-repeat center center;
+	right: -69px;
+	top: 12px;
+	left: auto;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 17px;
+	height: 17px;
+}
+
+.timeline_wrapper li h4 {
+	color: #333;
+	transition: all 1s;
+}
+
+.timeline_wrapper li p {
+	color: #666;
+	margin-top: 10px;
+	height: 60px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+
+.timeline_wrapper:after {
+	content: '\20';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.timeline_wrapper li:nth-child(1) {
+	margin-top: 0;
+}
+
+/* 表示1-3之间的间距 */
+.timeline_wrapper li {
+	float: right;
+	width: 46.5%;
+	text-align: left;
+	position: relative;
+	margin-top: 100px;
+}
+
+.timeline_wrapper li:nth-child(2n) {
+	float: left;
+	text-align: right;
+	margin-top: 90px;
+}
+
+.timeline_month {
+	display: inline-block;
+	color: #217af0;
+	font-size: 20px;
+}
+
+.service_article {
+	padding: 10px 50px;
+	margin-bottom: 0px;
+	height: auto;
+	background-color: transparent;
+}
+
+.service_article div {
+	height: 100px !important;
+}
+
+.service_one div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/superhigh.png);
+}
+
+.service_two div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/education.png);
+}
+
+.service_three div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/medical.png);
+}
+
+.service_four div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/sports.png);
+}
+
+.service_five div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/hotel.png);
+}
+
+.service_six div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/office.png);
+}
+
+.service_seven div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/commercial.png);
+}
+
+.service_eight div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/research.png);
+}
+
+.service_nine div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/complex.png);
+}
+
+.service_ten div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/exhibition.png);
+}
+
+.service_eleven div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/city-planning.png);
+}
+
+.service_twelve div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/history.png);
+}
+
+.service_thirteen div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/amusement.png);
+}
+
+.service_fourteen div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/residential.png);
+}
+
+.service_fifteen div:first-child {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/introduce/serviceRenge/cultural.png);
+}
+
+.service_des {
+	text-align: center;
+	min-height: 80px;
+}
+
+.service_des p:first-child {
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+.service_des p:nth-child(2) {
+	font-size: 12px;
+	color: rgb(153, 153, 153);
+	text-transform: capitalize;
+}
+
+.partnerList_main {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.partner_container {
+	padding: 15px;
+}
+
+.partner_container .partner_one {
+	width: 100%;
+	height: 110px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(/templets/hsjzsj/src/assets/partner/1.png);
+}
+
+.partner_container:hover {
+	box-shadow: rgba(0, 0, 0, 0.188235) 0px 17px 50px 0px;
+	-webkit-transform: translate3d(0px, -2px, 0px);
+	transform: translate3d(0px, -2px, 0px);
+	transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+	transition: All 0.3s ease;
+	z-index: 10;
+}
+
+@media (max-width: 768px) {
+	.about_tab_list li {
+		width: 20%;
+		font-size: 12px;
+	}
+}

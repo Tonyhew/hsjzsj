@@ -1,0 +1,4 @@
+INSERT INTO `hssj_flink` VALUES('1','1','https://www.dedebiz.com','DedeCMSV6','','','','1226375403','1','2');
+INSERT INTO `hssj_flink` VALUES('2','1','https://www.dedebiz.com/help','帮助中心','','','','1227772717','1','2');
+INSERT INTO `hssj_flink` VALUES('3','1','https://www.dedebiz.com/auth','授权中心','','','','1227772703','1','2');
+INSERT INTO `hssj_flink` VALUES('4','3','https://www.dedebiz.com/git','代码托管','','','','1603767210','1','1');

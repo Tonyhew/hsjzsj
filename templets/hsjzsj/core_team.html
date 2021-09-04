@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>河南瀚森建筑设计有限公司-瀚森建筑设计_核心团队</title>
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/header.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/footer.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/core_team.css">
+</head>
+
+<body scroll="yes">
+
+  {dede:include filename="header.htm"/}
+
+  <div class="coreTeam_wrapper">
+
+    <div class="core_team_header">
+
+      <div class="core_t_left">
+        <p>{dede:field.typename/}</p>
+        <p class="c_t_tit">
+          {dede:field name='typeid' runphp='yes'}
+          $id=@me;
+          global $dsql;
+          $sql="select seotitle from hssj_arctype where id=$id";
+          $row=$dsql->getOne($sql);
+          @me=$row["seotitle"];
+          {/dede:field}
+        </p>
+        <p class="c_t_line"></p>
+      </div>
+
+    </div>
+
+
+    <div class="coreTeam_main">
+
+      <div class="chiefLeader">
+
+        <div class="chiefL_left">
+          <img src="/templets/hsjzsj/src/assets/team/chief.jpg" alt="">
+        </div>
+
+        <div class="chiefL_right">
+
+          <div class="chief_info">
+
+            <div class="leader_name">
+              <h3>宋照青</h3>
+              <p class="leader_eng_name eng">song zhaoqing</p>
+            </div>
+
+            <div class="l_line"></div>
+
+            <div class="leader_position">
+              <h4>创始人 总建筑师</h4>
+              <p class="leader_eng_position eng">founder,chief architect</p>
+            </div>
+
+            <div class="l_info">
+              <p>现任职位</p>
+              <p>国家一级注册建筑师</p>
+              <p>高级工程师、中国建筑学会会员</p>
+              <p>清华大学建筑学院 建筑设计 硕士</p>
+              <p>西安冶金建筑学院建筑系客座教授</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="clear"></div>
+
+      </div>
+
+      <div class="team_o">
+        {dede:arclist addfields='name,engname,position,eng_position,introduce,detail_pic' typeid='12' channelid='19'}
+        <div class="team_o_item" data-id="[field:id/]">
+
+          <div class="team_img">
+            <div></div>
+            <img src="[field:picname/]" alt="">
+          </div>
+
+          <div class="team_o_info">
+            <div class="team_o_name">
+              <h3>[field:name /]</h3>
+              <p>[field:engname /]</p>
+            </div>
+
+            <div class="team_o_position">
+              <h4>
+                [field:position /]
+              </h4>
+              <p>
+                [field:eng_position /]
+              </p>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+
+        </div>
+        {/dede:arclist}
+
+        <div class="clear"></div>
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+
+  <div class="t_i_box">
+
+    <div class="b_left">
+      <img src="/templets/hsjzsj/src/assets/team/detail_leader.jpg" alt="">
+    </div>
+
+    <div class="b_right">
+
+      <div class="chief_info" id="chief_info">
+
+        <div class="leader_name">
+          <h3>宋照青</h3>
+          <p class="leader_eng_name eng">song zhaoqing</p>
+        </div>
+
+        <div class="l_line"></div>
+
+        <div class="leader_position">
+          <h4>创始人 总建筑师</h4>
+          <p class="leader_eng_position eng">founder,chief architect</p>
+        </div>
+
+        <div class="l_info_box">
+          <p class="b">现任职位</p>
+          <p>国家一级注册建筑师</p>
+          <p>高级工程师、中国建筑学会会员</p>
+          <p>清华大学建筑学院 建筑设计 硕士</p>
+          <p>西安冶金建筑学院建筑系客座教授</p>
+          <p>2001-至今 上海日清建筑设计有限公司 创始人、总建筑师</p>
+          <p>1998-2001日建设计国际有限公司 主任设计师</p>
+          <p>1995-1998新加坡日建设计国际有限公司 项目设计师</p>
+
+          <p class="b">个人荣誉</p>
+          <p>2018上海市杰出中青年建筑师</p>
+          <p>安邸AD 100建筑师</p>
+          <p>民用建筑设计市场di 推荐最佳建筑人</p>
+          <p>2016R EAD星设计&地产设计奖-杰出设计师</p>
+
+          <p class="b">获奖</p>
+          <p>2018世界建筑新闻奖</p>
+          <p>【苏州“大家”社区活动中心】住宅类别高度推荐奖</p>
+          <p>2018亚洲建+设计大奖</p>
+          <p>【天津鲁能泰山书院】 类别最佳</p>
+          <p>【上海旭辉总部大楼】 优胜奖</p>
+          <p>2018 WAF世界建筑节</p>
+          <p>【苏州“大家”社区活动中心】市政与社区类 入围</p>
+          <p>2018德国Iconic Awards标志性设计奖</p>
+          <p>【苏州“大家”社区活动中心】创意建筑类 优胜奖</p>
+          <p>2018德国Iconic Awards标志性设计奖</p>
+          <p>【天津鲁能泰山书院】创意建筑类 入围奖</p>
+          <p>2018中国建筑学会建筑设计奖</p>
+          <p>【天津鲁能泰山书院】公共类银奖</p>
+          <p>【璞樾和山】 公共类优秀奖</p>
+          <p>【旭辉总部大楼】 公共类优秀奖</p>
+          <p>【郑州大河宸院运动会馆】公共类优秀奖</p>
+          <p>【郑州美景东望】居住类优秀奖</p>
+          <p>【璞樾和山】景观园林 一等奖</p>
+          <p>【爱民弄】景观园林 二等奖</p>
+          <p>2017上海市建筑学会建筑创作奖</p>
+          <p>【上海旭辉总部大楼】公共建筑类 优秀奖</p>
+          <p>【天津鲁能泰山书院】公共建筑类 优秀奖</p>
+          <p>【郑州美境东望社区规划及建筑设计】居住建筑类 优秀奖</p>
+          <p>2016 WA中国建筑奖</p>
+          <p>【胡亥陵博物馆及周边环境整治与设计(秦二世遗址博物公园)】 建筑成就奖 入围奖</p>
+          <p>2015全国优秀工程勘察设计奖</p>
+          <p>【中星美华村】 住宅与住宅小区 三等奖</p>
+          <p>2015上海市建筑学会建筑创作奖</p>
+          <p>【北京亿城国际中心】公共建筑类 佳作奖</p>
+          <p>【海南清澜半岛游客度假中心】公共建筑类 佳作奖</p>
+          <p>【苏州棠悦湾社区中心】公共建筑类 佳作奖</p>
+          <p>【郑州空港新城中央公园群众文化艺术中心】 公共建筑类 佳作奖</p>
+          <p>【五矿西北旺（如园）】居住建筑类 佳作奖</p>
+          <p>【上海嘉定梦之湾住宅小区】居住建筑类 佳作奖</p>
+          <p>【珠海万山静云山庄】 居住建筑类 佳作奖</p>
+          <p>2015全国优秀工程勘察设计奖</p>
+
+
+          <p class="b">发表</p>
+          <p>《建筑师》 昨天，明天，相会于今天简谈新天地项目设计的过程</p>
+          <p>《城市建筑》2012年公寓设计趋势</p>
+          <p>《时代建筑》宋照青，“有”“无”之间 仁恒观棠、棠北社区设计</p>
+          <p>《城市建筑》 生活在历史与未来之间的人文住宅</p>
+          <p>《时代建筑》环境性格的情景融入 广东珠海万山静云山庄</p>
+          <p>《设计家》都市草原风——上海院子</p>
+
+
+          <p class="b">专访</p>
+          <p>《建筑师》《中外建筑》 《中国新建筑》 《MAP（苏州版）》</p>
+          <p>《地产界》《Di设计新潮》《时尚家居》 《安邸AD 100》</p>
+          <p>《时代建筑》 《世界建筑》《时代楼盘》 《理想空间》《设计家》</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+  {dede:arclist addfields='introduce,detail_pic' typeid='12' channelid='19'}
+  <div class="team_c" data-id="[field:id/]">
+
+    <div class="b_left">
+      <img src="[field:detail_pic /]" alt="">
+    </div>
+
+    <div class="box_right">
+      <div class="chief_info" id="chief_info">
+        [field:introduce /]
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+  {/dede:arclist}
+
+  {dede:include filename="footer.htm"/}
+
+  <script type="text/javascript" src="/templets/hsjzsj/src/js/layer/layer.js"></script>
+  <script type="text/javascript" src="/templets/hsjzsj/src/js/coreTeam.js"></script>
+</body>
+
+</html>

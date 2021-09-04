@@ -1,0 +1,1 @@
+INSERT INTO `hssj_member_space` VALUES('1','10','0','admin的空间','','person','','');

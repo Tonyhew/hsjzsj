@@ -1,0 +1,1 @@
+INSERT INTO `hssj_member_group` VALUES('1','朋友','0');

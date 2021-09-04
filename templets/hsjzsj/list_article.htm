@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>河南瀚森建筑设计有限公司-瀚森建筑设计_{dede:field.seotitle /}{dede:field.title /}</title>
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/header.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/footer.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/list_article.css">
+</head>
+
+<body>
+
+  {dede:include filename="header.htm"/}
+
+  <div class="list_article_container">
+
+    <div class="projectList_title_left">
+      <p>{dede:field.typename/}</p>
+      <p class="messageBoard_sec_tit">
+        {dede:field name='typeid' runphp='yes'}
+        $id=@me;
+        global $dsql;
+        $sql="select seotitle from hssj_arctype where id=$id";
+        $row=$dsql->getOne($sql);
+        @me=$row["seotitle"];
+        {/dede:field}
+      </p>
+      <p class="messageBoard_line"></p>
+    </div>
+
+
+    <div class="article_list_wrapper">
+
+
+      <div class="list_main">
+
+        {dede:list pagesize ='10'}
+        <a href="[field:arcurl/]" class="list_item">
+          <div class="list_left_date">
+            <p>
+              <span class="article_year">[field:pubdate function="MyDate('Y',@me)" /]</span>
+              <span class="article_date">[field:pubdate function="MyDate('m-d',@me)" /]</span>
+            </p>
+            <span class="a_line"></span>
+          </div>
+
+          <div class="list_left_tit">
+            <p>[field:title /]</p>
+            <p>[field:description /]</p>
+          </div>
+
+          <div class="list_right_img">
+            <img src="[field:picname/]" alt="">
+          </div>
+
+          <div class="clear"></div>
+        </a>
+        {/dede:list}
+
+      </div>
+
+      <div class="project_list_pagination">
+
+        {dede:pagelist listitem="pageno"/}
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  {dede:include filename="footer.htm"/}
+
+  
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+/* 通用 */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+div[id^='ascrail'] {
+  display: block !important;
+}
+
+
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+  -webkit-border-radius: 0
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #b8b8b8;
+  -webkit-border-radius: 6px;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  border: 2px solid #fff;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5
+}
+
+::-webkit-scrollbar-thumb:hover {
+  height: 50px;
+  background-color: #878987;
+  -webkit-border-radius: 6px
+}
+
+img {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+ol,
+ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.clear {
+  clear: both;
+}
+
+/* 通用 */
+
+/* 头部 */
+.header_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  max-width: 1920px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header_main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header_main .hs_left {
+  float: left;
+}
+
+.header_main .hs_right {
+  float: right;
+}
+
+.m_menu {
+  display: none !important;
+}
+
+.m_right {
+  display: none;
+}
+
+.view {
+  display: inline-block;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  padding: 20px;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+}
+
+.m_right_item a {
+  color: #8c8c8c;
+  line-height: 32px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .header_main .hs_right .hs_left {
+    display: none;
+  }
+
+  .m_menu {
+    display: inline-block !important;
+    width: 50px;
+    height: 50px !important;
+    line-height: 50px !important;
+  }
+
+  .header_main .hs_header_logo {
+    width: 25% !important;
+  }
+
+}
+
+.header_main .hs_header_logo {
+  width: 110px;
+  line-height: 70px;
+  height: 70px;
+}
+
+.header_main .hs_header_logo a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.header_main .hs_header_logo a img {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header_main .hs_header_language em {
+  padding: 0 22px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.header_main .hs_header_language a,
+.header_main .hs_header_language em {
+  display: inline-block;
+  line-height: 70px;
+  height: 70px;
+  vertical-align: top;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.header_main .hs_header_language a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.header_main .hs_header_search {
+  cursor: pointer;
+  background: url(/templets/hsjzsj/src/assets/common/search.png) center center no-repeat;
+  display: inline-block;
+  width: 23px;
+  height: 70px;
+  background-size: contain;
+}
+
+.header_main .hs_header_nav .hs_nav_main .hs_navList_item {
+  float: left;
+  font-size: 12px;
+  position: relative;
+}
+
+.hs_header_nav .hs_nav_main .hs_navList_item .hs_navma {
+  color: #fff;
+  line-height: 70px;
+  height: 70px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 25px;
+}
+
+.hs_header_nav .hs_nav_main .hs_navList_item a .navem {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hs_header_nav .hs_nav_main .hs_secondNav_list {
+  position: absolute;
+  z-index: 999;
+  height: 0;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.hs_header_nav .hs_nav_main .hs_secondNav_list a {
+  z-index: 999;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  *display: block;
+  *zoom: 1;
+  margin: 0 10px;
+}
+
+.hs_nav_1 p {
+  width: 500px;
+  left: -55px;
+}
+
+.hs_nav_2 p {
+  width: 500px;
+  left: -25px;
+}
+
+.hs_nav_3 p {
+  width: 502px;
+  left: -30px;
+}
+
+.hs_nav_4 p {
+  width: 500px;
+  left: -30px;
+}
+
+.hs_nav_5 p {
+  width: 500px;
+  left: -35px;
+}
+
+.hs_navmon .nav_active,
+.hs_navList_item:hover .nav_active {
+  bottom: 12px;
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+}
+
+.nav_active {
+  transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  -webkit-transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+  -moz-transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+}
+
+.nav_active {
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background: #fff;
+  display: block;
+  left: 50%;
+  margin-left: -2px;
+  bottom: 0;
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+}
+
+
+.f1_cont {
+  position: fixed;
+  height: 0;
+  line-height: 50px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hs_clearFloat {
+  clear: both;
+}
+
+/* 头部 */

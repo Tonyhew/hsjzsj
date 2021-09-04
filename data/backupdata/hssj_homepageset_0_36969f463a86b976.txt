@@ -1,0 +1,1 @@
+INSERT INTO `hssj_homepageset` VALUES('hsjzsj/index.htm','../index.html','1');

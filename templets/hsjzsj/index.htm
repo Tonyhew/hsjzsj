@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>河南瀚森建筑设计有限公司-瀚森建筑设计</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/animate.min.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/header.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/footer.css">
+  <link rel="stylesheet" href="/templets/hsjzsj/src/styles/index.css">
+</head>
+
+<body>
+  <div class="main">
+    {dede:include filename="header.htm"/}
+
+    <!-- part one 首屏banner -->
+    <div class="banner_container swiper-container">
+      <div class="swiper-wrapper">
+        {dede:arclist addfields='piclinks,video,type' typeid='1' row='8' channelid='7' }
+        <div class="swiper-slide" data-select-type="[field:type/]">
+          <a title="[field:title/]" target="_blank">
+            <!--  href="[field:piclinks/]" -->
+            <div class="banner_v_wrapper">
+              <div class="banner_img">
+                <img src="[field:litpic/]" alt="">
+              </div>
+              <video class="banner_video" width="100%" height="100%" loop muted autoplay>
+                <source src="[field:video/]" type="video/mp4">
+              </video>
+              <div class="banner_text ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                swiper-animate-delay="0.3s">
+                <div class="banner_text_title">
+                  <p>[field:fulltitle/]</p>
+                </div>
+                <div class="banner_text_desT">
+                  <div class="banner_text_desLine"></div>
+                  <p>[field:description/]</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        {/dede:arclist}
+
+      </div>
+
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+
+      <!-- 如果需要导航按钮 -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+    <!-- part one 首屏banner -->
+
+    <!-- part two 项目板块 -->
+    <div class="latest-projects-container">
+      <header>
+        <div class="latest-projects-title-main">
+          <div class="latest-projects-title">
+            <h1><a class="latest-p-t-hover">最新项目</a></h1>
+            <h2><a class="latest-p-t-hover">NEW PROJECTS</a></h2>
+          </div>
+          <a class="latest-projects-more" >
+            <!-- href="/projects/" -->
+            MORE+
+          </a>
+        </div>
+      </header>
+
+      <div class="latest-projects-picture">
+
+        {dede:channelartlist typeid="5"}
+        {dede:arclist row='6' orderby='id' orderway='asc' addfields='city, project_name,picshowhow,pictype' channelid='18'}
+        <div class="picture-grid-box" data-picshowhow='[field:picshowhow/]' data-pictype='[field:pictype/]'>
+          <!-- <a href="[field:arcurl/]"> -->
+            <picture>
+              <img src="[field:picname/]" alt="">
+            </picture>
+          <!-- </a> -->
+          <div class="picture-info">
+            <p>[field:city/]</p>
+            <p>[field:project_name/]</p>
+          </div>
+        </div>
+        {/dede:arclist}
+        {/dede:channelartlist}
+
+
+      </div>
+    </div>
+    <!-- part two 项目板块 -->
+
+    <!-- part three 新闻板块 -->
+    <div class="hansen-news">
+      <header>
+        <div class="latest-projects-title-main">
+          <div class="latest-projects-title">
+            <h1><a class="latest-p-t-hover">瀚森新闻</a></h1>
+            <h2><a class="latest-p-t-hover">NEWS</a></h2>
+          </div>
+          <a class="latest-projects-more" >
+             <!-- href="/hs_news/" -->
+            MORE+
+          </a>
+        </div>
+      </header>
+
+      <div class="news_list">
+        {dede:arclist typeid='2' row='3' channelid='1'}
+        <!-- <a href="[field:arcurl/]"> -->
+          <div class="news-listBox">
+            <img src="[field:litpic/]">
+            <div class="news_postDate">
+              <p>[field:pubdate function="strftime('%b',@me)"/]</p>
+              <p>[field:pubdate function="strftime('%d',@me)"/]</p>
+            </div>
+            <div class="listBox-content">
+              <h3 class="listBox-title">[field:fulltitle/]</h3>
+              <span class="listBox-post">[field:description function="cn_substr(@me, 80)"/]</span>
+            </div>
+          </div>
+        <!-- </a> -->
+        {/dede:arclist}
+      </div>
+    </div>
+    <!-- part three 新闻板块 -->
+
+    <!-- part four 合作伙伴 -->
+    <!-- <div class="hs_partner">
+      <header>
+        <div class="latest-projects-title-main">
+          <div class="latest-projects-title">
+            <h1><a class="latest-p-t-hover">合作伙伴</a></h1>
+            <h2><a class="latest-p-t-hover">PARTNER</a></h2>
+          </div>
+          <a class="latest-projects-more" href="#">
+            MORE+
+          </a>
+        </div>
+      </header>
+
+      <div class="partnerList_main">
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+        <div class="partner_container">
+          <img src="/templets/hsjzsj/src/assets/partner/lvdi.jpg" alt="">
+        </div>
+      </div>
+    </div> -->
+    <!-- part four 合作伙伴 -->
+
+    <!-- part five 访客留言 -->
+    <div class="vistor_leave_message">
+      <header>
+        <div class="latest-projects-title-main">
+          <div class="latest-projects-title">
+            <h1><a class="latest-p-t-hover">访客留言</a></h1>
+            <h2><a class="latest-p-t-hover">CONTACT US</a></h2>
+          </div>
+        </div>
+      </header>
+
+      <div class="message_form">
+        <form action="javascript:;" id="message_post" enctype="multipart/form-data" method="post">
+          <input type="hidden" name="action" value="post">
+          <input type="hidden" name="diyid" value="1">
+          <input type="hidden" name="do" value="2">
+
+          <div class="form_left">
+            <div class="form_leave_message">
+              <textarea name="message" id="message" placeholder="请填写您的留言"></textarea>
+            </div>
+          </div>
+
+          <div class="form_right">
+            <div class="form_vistor_name form_input">
+              <input type="text" name="name" id="name" class="intxt" placeholder="请填写您的姓名">
+            </div>
+            <div class="form_vistor_company form_input">
+              <input type="text" name="company" id="company" class="intxt" placeholder="请填写您的公司">
+            </div>
+            <div class="form_vistor_contact form_input">
+              <input type="text" name="contact" id="contact" class="intxt" placeholder="请填写您的联系方式">
+            </div>
+            <div class="post_form">
+              <button type="submit" name="submit" class="form_button">确认提交</button>
+            </div>
+          </div>
+
+          <input type="text" name="add_time" id="add_time" class="intxt" value="">
+          <input type="hidden" name="dede_fields"
+            value="message,multitext;name,text;company,text;contact,text;add_time,text">
+          <input type="hidden" name="dede_fieldshash" value="41a40dc739c3b4b349961e424eb26f47">
+
+          <div class="clear"></div>
+        </form>
+
+      </div>
+
+    </div>
+    <!-- part five 访客留言 -->
+
+    {dede:include filename="footer.htm"/}
+  </div>
+
+  <script type="text/javascript" src="/templets/hsjzsj/src/js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="/templets/hsjzsj/src/js/swiper.animate1.0.3.min.js"></script>
+  <script type="text/javascript" src="/templets/hsjzsj/src/js/layer/layer.js"></script>
+  <script type="text/javascript" src="/templets/hsjzsj/src/js/main.js"></script>
+</body>
+
+</html>
